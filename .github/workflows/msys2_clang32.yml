@@ -22,5 +22,10 @@ jobs:
       - name: builduvc
         run: |
           echo 'builduvc!'
-          ls -la
-          ls -l ./build
+          ls -la 
+      - name: Upload aar 
+        uses: actions/upload-artifact@v2 
+        with: 
+          name: app-debug 
+          path: ./build-msys2-clang32
+
