@@ -19,3 +19,8 @@ jobs:
           echo 'Running in MSYS2!'
           ./bootstrap.sh
           ./.private/ci-build.sh --build-dir build-msys2-clang32
+      - name: builduvc
+        run: |
+          echo 'builduvc!'
+          ls -la
+          ls -l ./build
